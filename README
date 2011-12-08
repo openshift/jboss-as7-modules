@@ -1,0 +1,5 @@
+Modules included in the JBossAS-7.x server installation used by the OpenShift cartridge
+
+- mysql
+- switchyard
+
