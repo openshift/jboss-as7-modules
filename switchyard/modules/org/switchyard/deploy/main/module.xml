@@ -25,7 +25,7 @@
 <module xmlns="urn:jboss:module:1.0" name="org.switchyard.deploy">
 
     <resources>
-        <resource-root path="switchyard-deploy-0.3.0.Final.jar"/>
+        <resource-root path="switchyard-deploy-0.4.0-SNAPSHOT.jar"/>
     </resources>
 
     <dependencies>
@@ -37,5 +37,6 @@
         <module name="org.switchyard.config"/>
         <module name="org.switchyard.runtime"/>
         <module name="org.switchyard.transform"/>
+        <module name="org.switchyard.validate"/>
     </dependencies>
 </module>
