@@ -22,7 +22,7 @@
   -->
 <module xmlns="urn:jboss:module:1.0" name="org.jbpm.jbpm-persistence-jpa">
     <resources>
-        <resource-root path="switchyard-jbpm-persistence-jpa-0.3.0.Final.jar"/>
+        <resource-root path="jbpm-persistence-jpa-5.2.0.Final.jar"/>
     </resources>
     <dependencies>
         <module name="org.drools.drools-persistence-jpa"/>

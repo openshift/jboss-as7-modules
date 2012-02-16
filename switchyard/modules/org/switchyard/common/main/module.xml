@@ -25,7 +25,7 @@
 <module xmlns="urn:jboss:module:1.0" name="org.switchyard.common">
 
     <resources>
-        <resource-root path="switchyard-common-0.3.0.Final.jar"/>
+        <resource-root path="switchyard-common-0.4.0-SNAPSHOT.jar"/>
     </resources>
 
     <dependencies>

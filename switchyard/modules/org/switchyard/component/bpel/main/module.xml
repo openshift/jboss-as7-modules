@@ -22,7 +22,7 @@
 <module xmlns="urn:jboss:module:1.0" name="org.switchyard.component.bpel">
 
     <resources>
-        <resource-root path="switchyard-component-bpel-0.3.0.Final.jar"/>
+        <resource-root path="switchyard-component-bpel-0.4.0-SNAPSHOT.jar"/>
         <resource-root path="engine-3.0.0.20111024-M1.jar"/>
         <resource-root path="riftsaw-agents-3.0.0.20111024-M1.jar"/>
         <resource-root path="riftsaw-bpel-api-3.0.0.20111024-M1.jar"/>

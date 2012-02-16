@@ -22,7 +22,7 @@
   -->
 <module xmlns="urn:jboss:module:1.0" name="org.jbpm.jbpm-bpmn2">
     <resources>
-        <resource-root path="jbpm-bpmn2-5.1.1.Final.jar"/>
+        <resource-root path="jbpm-bpmn2-5.2.0.Final.jar"/>
     </resources>
     <dependencies>
         <module name="javax.api"/>
