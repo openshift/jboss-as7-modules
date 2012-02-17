@@ -2,4 +2,5 @@ Modules included in the JBossAS-7.x server installation used by the OpenShift ca
 
 - mysql
 - switchyard
+- mongodb java driver
 
