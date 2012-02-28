@@ -25,7 +25,7 @@
 <module xmlns="urn:jboss:module:1.0" name="org.switchyard.api.extensions.wsdl">
 
     <resources>
-        <resource-root path="switchyard-extensions-wsdl-0.4.0-SNAPSHOT.jar"/>
+        <resource-root path="switchyard-extensions-wsdl-0.4.0.OS1.jar"/>
     </resources>
 
     <dependencies>
