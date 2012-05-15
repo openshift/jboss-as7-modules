@@ -1,0 +1,15 @@
+
+apply plugin: 'java'
+
+// Create a zip archive of the modules so that one bundle can be used to
+// update the as7 modules
+task createModuleZip(type: Zip) {
+    from 'mongodb/modules'
+    from 'mysql/modules'
+    from 'switchyard/modules'
+    into 'modules'
+}
+
+println createModuleZip.archiveName
+println relativePath(createModuleZip.destinationDir)
+println relativePath(createModuleZip.archivePath)
