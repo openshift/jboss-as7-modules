@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  ~ JBoss, Home of Professional Open Source.
+  ~ Copyright 2010, Red Hat, Inc., and individual contributors
+  ~ as indicated by the @author tags. See the copyright.txt file in the
+  ~ distribution for a full listing of individual contributors.
+  ~
+  ~ This is free software; you can redistribute it and/or modify it
+  ~ under the terms of the GNU Lesser General Public License as
+  ~ published by the Free Software Foundation; either version 2.1 of
+  ~ the License, or (at your option) any later version.
+  ~
+  ~ This software is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+  ~ Lesser General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Lesser General Public
+  ~ License along with this software; if not, write to the Free
+  ~ Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
+  ~ 02110-1301 USA, or see the FSF site: http://www.fsf.org.
+  -->
+
+<module xmlns="urn:jboss:module:1.0" name="batik">
+
+    <resources>
+        <resource-root path="batik-anim-1.7.jar"/>
+        <resource-root path="batik-awt-util-1.7.jar"/>
+        <resource-root path="batik-bridge-1.7.jar"/>
+        <resource-root path="batik-codec-1.7.jar"/>
+        <resource-root path="batik-css-1.7.jar"/>
+        <resource-root path="batik-dom-1.7.jar"/>
+        <resource-root path="batik-ext-1.7.jar"/>
+        <resource-root path="batik-gvt-1.7.jar"/>
+        <resource-root path="batik-parser-1.7.jar"/>
+        <resource-root path="batik-script-1.7.jar"/>
+        <resource-root path="batik-svg-dom-1.7.jar"/>
+        <resource-root path="batik-svggen-1.7.jar"/>
+        <resource-root path="batik-transcoder-1.7.jar"/>
+        <resource-root path="batik-util-1.7.jar"/>
+        <resource-root path="batik-xml-1.7.jar"/>
+        <resource-root path="axiom-api-1.2.8.jar"/>
+        <resource-root path="axiom-impl-1.2.8.jar"/>
+        <resource-root path="xml-apis-1.3.04.jar" />
+        <resource-root path="xml-apis-ext-1.3.04.jar"/>
+
+    </resources>
+
+    <dependencies>
+        <module name="org.apache.commons.codec"/>
+        <module name="org.apache.commons.logging"/>
+        <module name="javax.api" />
+    </dependencies>
+
+</module>

@@ -22,17 +22,23 @@
 <module xmlns="urn:jboss:module:1.0" name="org.switchyard.component.soap">
 
     <resources>
-        <resource-root path="switchyard-component-soap-0.4.0.OS1.jar"/>
+        <resource-root path="switchyard-component-soap-0.6.0-SNAPSHOT.jar"/>
     </resources>
 
     <dependencies>
+        <!-- Needed for @Resource annotations -->
+        <module name="javax.annotation.api"/>
         <module name="javax.api"/>
+        <module name="javax.servlet.api"/>
         <module name="javax.wsdl4j.api"/>
         <module name="org.apache.log4j"/>
+        <module name="org.jboss.as.webservices" export="true"/>
+        <module name="org.jboss.ws.spi" services="import" export="true"/>
         <module name="org.switchyard.api"/>
         <module name="org.switchyard.common"/>
         <module name="org.switchyard.config"/>
         <module name="org.switchyard.deploy"/>
+        <module name="org.switchyard.component.common"/>
         <module name="org.switchyard.component.soap.ws-impl"/>
         <module name="org.switchyard.component.soap.saaj-impl"/>
     </dependencies>

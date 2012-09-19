@@ -25,11 +25,12 @@
 <module xmlns="urn:jboss:module:1.0" name="org.springframework">
 
     <resources>
-        <resource-root path="spring-beans-3.0.6.RELEASE.jar"/>
-        <resource-root path="spring-core-3.0.6.RELEASE.jar"/>
-        <resource-root path="spring-context-3.0.6.RELEASE.jar"/>
-        <resource-root path="spring-jms-3.0.6.RELEASE.jar"/>
-        <resource-root path="spring-tx-3.0.6.RELEASE.jar"/>
+        <resource-root path="spring-beans-3.0.7.RELEASE.jar"/>
+        <resource-root path="spring-core-3.0.7.RELEASE.jar"/>
+        <resource-root path="spring-context-3.0.7.RELEASE.jar"/>
+        <resource-root path="spring-jms-3.0.7.RELEASE.jar"/>
+        <resource-root path="spring-jdbc-3.0.7.RELEASE.jar"/>
+        <resource-root path="spring-tx-3.0.7.RELEASE.jar"/>
     </resources>
 
     <dependencies>
