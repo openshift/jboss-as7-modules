@@ -22,7 +22,7 @@
 <module xmlns="urn:jboss:module:1.0" name="org.switchyard.component.bean">
 
     <resources>
-        <resource-root path="switchyard-component-bean-0.4.0.OS1.jar"/>
+        <resource-root path="switchyard-component-bean-0.6.0-SNAPSHOT.jar"/>
     </resources>
 
     <dependencies>

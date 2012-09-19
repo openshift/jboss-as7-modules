@@ -25,18 +25,71 @@
 <module xmlns="urn:jboss:module:1.0" name="org.switchyard.component.camel">
 
     <resources>
-        <resource-root path="switchyard-component-camel-0.4.0.OS1.jar"/>
-        <resource-root path="switchyard-component-camel-as7-0.4.0.OS1.jar"/>
-        <resource-root path="switchyard-component-camel-cdi-0.4.0.OS1.jar"/>
+        <resource-root path="switchyard-component-camel-0.6.0-SNAPSHOT.jar"/>
     </resources>
 
     <dependencies>
         <module name="javax.api"/>
         <module name="javax.enterprise.api"/>
+        <module name="javax.ws.rs.api"/>
         <module name="org.apache.log4j"/>
         <module name="org.apache.camel.core" services="export" export="true"/>
-        <module name="org.apache.camel.spring" services="export" export="true"/>
+        <module name="org.apache.camel.cdi" services="export" export="true" />
+        <module name="org.apache.camel.spring" services="export" export="true">
+            <imports>
+                <include path="META-INF/services/org/apache/camel/component"/>
+            </imports>
+            <exports>
+                <include path="META-INF/services/org/apache/camel/component"/>
+            </exports>
+        </module>
         <module name="org.apache.camel.jms" export="true" optional="true">
+            <imports>
+                <include path="META-INF/services/org/apache/camel/component"/>
+            </imports>
+            <exports>
+                <include path="META-INF/services/org/apache/camel/component"/>
+            </exports>
+        </module>
+        <module name="org.apache.camel.cxf" export="true" optional="true">
+            <imports>
+                <include path="META-INF/cxf"/>
+                <include path="META-INF/services/org/apache/camel"/>
+                <include path="META-INF/services/org/apache/camel/component"/>
+            </imports>
+            <exports>
+                <include path="META-INF/cxf"/>
+                <include path="META-INF/services/org/apache/camel"/>
+                <include path="META-INF/services/org/apache/camel/component"/>
+            </exports>
+        </module>
+        <module name="org.apache.camel.ftp" services="export" export="true">
+            <imports>
+                <include path="META-INF/services/org/apache/camel/component"/>
+            </imports>
+            <exports>
+                <include path="META-INF/services/org/apache/camel/component"/>
+            </exports>
+        </module>
+        <module name="org.apache.camel.netty" services="export" export="true">
+            <imports>
+                <include path="META-INF/services/org/apache/camel"/>
+                <include path="META-INF/services/org/apache/camel/component"/>
+            </imports>
+            <exports>
+                <include path="META-INF/services/org/apache/camel"/>
+                <include path="META-INF/services/org/apache/camel/component"/>
+            </exports>
+        </module>
+        <module name="org.apache.camel.quartz" services="export" export="true">
+            <imports>
+                <include path="META-INF/services/org/apache/camel/component"/>
+            </imports>
+            <exports>
+                <include path="META-INF/services/org/apache/camel/component"/>
+            </exports>
+        </module>
+        <module name="org.apache.camel.sql" services="export" export="true">
             <imports>
                 <include path="META-INF/services/org/apache/camel/component"/>
             </imports>
@@ -47,10 +100,13 @@
         <module name="org.jboss.as.naming" export="true"/>
         <module name="org.switchyard.api"/>
         <module name="org.switchyard.common"/>
+        <module name="org.switchyard.common-camel"/>
         <module name="org.switchyard.config"/>
         <module name="org.switchyard.deploy"/>
         <module name="org.switchyard.jaxb-impl"/>
         <module name="org.switchyard.component.bean" />
+        <module name="org.switchyard.component.common" />
+        <module name="org.switchyard.component.common.rest"/>
         <module name="org.springframework" />
     </dependencies>
 </module>
