@@ -25,7 +25,7 @@
 <module xmlns="urn:jboss:module:1.0" name="org.switchyard">
 
     <resources>
-        <resource-root path="switchyard-deploy-jboss-as7-0.4.0.OS1.jar"/>
+        <resource-root path="switchyard-deploy-jboss-as7-0.6.0-SNAPSHOT.jar"/>
     </resources>
 
     <dependencies>
@@ -40,13 +40,21 @@
         <module name="org.jboss.as.naming"/>
         <module name="org.jboss.as.network"/>
         <module name="org.jboss.as.server"/>
+        <module name="org.jboss.as.web"/>
         <module name="org.jboss.as.weld"/>
+        <module name="org.jboss.metadata"/>
         <module name="org.jboss.weld.spi"/>
+        <module name="org.jboss.as.connector"/>
+        <module name="org.jboss.ironjacamar.api"/>
         <module name="org.switchyard.api"/>
         <module name="org.switchyard.admin"/>
         <module name="org.switchyard.common"/>
+        <module name="org.switchyard.common-camel"/>
         <module name="org.switchyard.config"/>
         <module name="org.switchyard.deploy"/>
         <module name="org.switchyard.runtime"/>
+        <module name="org.switchyard.component.http"/>
+        <module name="org.switchyard.component.resteasy"/>
+        <module name="org.jboss.resteasy.resteasy-jaxrs"/>
     </dependencies>
 </module>

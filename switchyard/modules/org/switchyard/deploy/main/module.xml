@@ -25,7 +25,7 @@
 <module xmlns="urn:jboss:module:1.0" name="org.switchyard.deploy">
 
     <resources>
-        <resource-root path="switchyard-deploy-0.4.0.OS1.jar"/>
+        <resource-root path="switchyard-deploy-0.6.0-SNAPSHOT.jar"/>
     </resources>
 
     <dependencies>
@@ -33,7 +33,9 @@
         <module name="org.apache.log4j"/>
         <module name="org.switchyard.api"/>
         <module name="org.switchyard.api.extensions.wsdl"/>
+        <module name="org.switchyard.bus.camel"/>
         <module name="org.switchyard.common"/>
+        <module name="org.switchyard.common-camel"/>
         <module name="org.switchyard.config"/>
         <module name="org.switchyard.runtime"/>
         <module name="org.switchyard.transform"/>
